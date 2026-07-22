@@ -1,5 +1,16 @@
-// 217. CONTAINS DUPLICATE I
+// exp_1.1   217. CONTAINS DUPLICATE I
+AIM: Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
+Algorithm: Contains Duplicate (Using Hash Set)
+Steps
+
+Step 1: Create an empty hash set seen to store the elements that have already been visited.
+Step 2: Traverse the array nums from the first element to the last.
+Step 3: For each element num:
+      Check whether num is already present in the hash set seen.
+      If it is present, it means the element has appeared before, so return true because a duplicate exists.
+      Otherwise, insert num into the hash set and continue to the next element.
+Step 4: If all elements are processed and no duplicate is found, return false since every element is distinct.
 
 class Solution {
 public:
@@ -13,7 +24,19 @@ public:
     }
 };
 
-// 219. CONTAINS DUPLICATE II
+// exp_1.2   219. CONTAINS DUPLICATE II
+
+AIM: Given an integer array nums and an integer k, return true if there are two distinct indices i and j in the array such that nums[i] == nums[j] and abs(i - j) <= k.
+
+Algorithm: ContainsDuplicate(nums)
+
+Step 1: Create an empty hash set 'seen'.
+Step 2: Traverse each element 'num' in nums.
+Step 3: If num exists in seen, return True.
+Step 4: Otherwise, insert num into seen.
+Step 5: Repeat until all elements are checked.
+Step 6: Return False if no duplicate is found.
+Step 7: Stop.
 
 class Solution {
 public:
