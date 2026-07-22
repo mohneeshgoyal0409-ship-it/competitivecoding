@@ -1,4 +1,4 @@
-// CONTAINS DUPLICATE I
+// 217. CONTAINS DUPLICATE I
 
 
 class Solution {
@@ -13,7 +13,7 @@ public:
     }
 };
 
-// CONTAINS DUPLICATE II
+// 219. CONTAINS DUPLICATE II
 
 class Solution {
 public:
